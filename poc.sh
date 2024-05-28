@@ -11,8 +11,7 @@ isoTags=($(skopeo list-tags docker://$isoImage | jq '.Tags[]' | grep -v '.att\|.
 file="./default.json"
 
 echo "[" > $file
-for ((i=0; i < ${#osTags[@]}; i++)); do
-    tag=${osTags[i]}
+for tag in "${osTags[@]}"; do
     cat << EOF >> $file
     {
         "metadata": {
@@ -29,8 +28,7 @@ for ((i=0; i < ${#osTags[@]}; i++)); do
     },
 EOF
 done
-for ((i=0; i < ${#isoTags[@]}; i++)); do
-    tag=${isoTags[i]}
+for tag in "${isoTags[@]}"; do
     cat << EOF >> $file
     {
         "metadata": {
