@@ -1,0 +1,327 @@
+[
+    {
+        "metadata": {
+            "name": "v2.0.2"
+        },
+        "spec": {
+            "version": "v2.0.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.102"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.102",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.102",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.105"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.105",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.105",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.107"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.107",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.107",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.109"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.109",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.109",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.111"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.111",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.111",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.20"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.20",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.20",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.70"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.70",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.70",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.85"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.85",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.85",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.87"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.87",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.87",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.89"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.89",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.89",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.91"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.91",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.91",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.93"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.93",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.93",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.94"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.94",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.94",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.96"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.96",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.96",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.97"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.97",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.97",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.99"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.99",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.99",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4"
+        },
+        "spec": {
+            "version": "v2.0.4",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.2"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.2",
+                "displayName": "Elemental OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2"
+        },
+        "spec": {
+            "version": "v2.0.2",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.2",
+                "displayName": "Elemental ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.128"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.128",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.128",
+                "displayName": "Elemental ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.27"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.27",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.27",
+                "displayName": "Elemental ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.97"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.97",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.97",
+                "displayName": "Elemental ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4"
+        },
+        "spec": {
+            "version": "v2.0.4",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.4",
+                "displayName": "Elemental ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.3"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.3",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.3",
+                "displayName": "Elemental ISO"
+            }
+        }
+    }
+]
