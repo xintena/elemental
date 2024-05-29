@@ -7,7 +7,7 @@
             "version": "v2.0.2",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -20,7 +20,7 @@
             "version": "v2.0.2-4.2.16",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-4.2.16",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-4.2.16",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -33,7 +33,7 @@
             "version": "v2.0.2-4.2.51",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-4.2.51",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-4.2.51",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -46,7 +46,7 @@
             "version": "v2.0.2-4.2.60",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-4.2.60",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-4.2.60",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -59,7 +59,7 @@
             "version": "v2.0.2-4.2.65",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-4.2.65",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-4.2.65",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -72,7 +72,7 @@
             "version": "v2.0.2-5.5.1",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-5.5.1",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.1",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -85,7 +85,7 @@
             "version": "v2.0.2-5.5.12",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-5.5.12",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.12",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -98,7 +98,7 @@
             "version": "v2.0.2-5.5.2",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-5.5.2",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.2",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -111,7 +111,7 @@
             "version": "v2.0.2-5.5.6",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-5.5.6",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.6",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -124,7 +124,7 @@
             "version": "v2.0.2-5.5.9",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.2-5.5.9",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.9",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -137,7 +137,7 @@
             "version": "v2.0.4",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.4",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -150,7 +150,7 @@
             "version": "v2.0.4-5.8.1",
             "type": "container",
             "metadata": {
-                "upgradeImage": ":2.0.4-5.8.1",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4-5.8.1",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
@@ -163,7 +163,7 @@
             "version": "v2.0.2",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.2",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -176,7 +176,7 @@
             "version": "v2.0.2-4.2.156",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.2-4.2.156",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2-4.2.156",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -189,7 +189,7 @@
             "version": "v2.0.2-4.2.203",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.2-4.2.203",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2-4.2.203",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -202,7 +202,7 @@
             "version": "v2.0.2-4.2.42",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.2-4.2.42",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2-4.2.42",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -215,7 +215,7 @@
             "version": "v2.0.4",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.4",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.4",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -228,7 +228,7 @@
             "version": "v2.0.4-5.5.3",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.4-5.5.3",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.4-5.5.3",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }
@@ -241,7 +241,7 @@
             "version": "v2.0.4-5.5.6",
             "type": "iso",
             "metadata": {
-                "uri": ":2.0.4-5.5.6",
+                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.4-5.5.6",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }

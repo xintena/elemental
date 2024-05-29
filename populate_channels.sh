@@ -29,7 +29,7 @@ while IFS=\= read watch; do
             "version": "v$tag",
             "type": "container",
             "metadata": {
-                "upgradeImage": "$osImage:$tag",
+                "upgradeImage": "$osRepo:$tag",
                 "displayName": "$displayName OS"
             }
         }
@@ -50,7 +50,7 @@ EOF
             "version": "v$tag",
             "type": "iso",
             "metadata": {
-                "uri": "$isoImage:$tag",
+                "uri": "$isoRepo:$tag",
                 "displayName": "$displayName ISO"
             }
         }
