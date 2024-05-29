@@ -6,7 +6,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  channels-matrix:
+  publish-channel:
     strategy:
       matrix:
         channel:
@@ -18,7 +18,6 @@ jobs:
             file: "sle-micro-kvm-5-5.json"
           - tag: "5.5-rt"
             file: "sle-micro-rt-5-5.json"
-  publish-channel:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
