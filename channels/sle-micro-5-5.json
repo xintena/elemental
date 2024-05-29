@@ -1,0 +1,340 @@
+[
+    {
+        "metadata": {
+            "name": "v2.0.2"
+        },
+        "spec": {
+            "version": "v2.0.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.102"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.102",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.102",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.105"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.105",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.105",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.107"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.107",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.107",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.109"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.109",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.109",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.111"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.111",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.111",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.20"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.20",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.20",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.70"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.70",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.70",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.85"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.85",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.85",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.87"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.87",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.87",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.89"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.89",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.89",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.91"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.91",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.91",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.93"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.93",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.93",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.94"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.94",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.94",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.96"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.96",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.96",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.97"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.97",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.97",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.99"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.99",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-4.2.99",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4"
+        },
+        "spec": {
+            "version": "v2.0.4",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.4",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.2"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.4-5.5.2",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2"
+        },
+        "spec": {
+            "version": "v2.0.2",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.2",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.128"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.128",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.2-4.2.128",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.27"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.27",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.2-4.2.27",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-4.2.97"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.97",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.2-4.2.97",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4"
+        },
+        "spec": {
+            "version": "v2.0.4",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.4",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.3"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.3",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.4-5.5.3",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.6"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.6",
+            "type": "iso",
+            "metadata": {
+                "uri": ":2.0.4-5.5.6",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    }
+]
