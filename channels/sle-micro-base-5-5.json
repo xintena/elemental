@@ -1,7 +1,7 @@
 [
     {
         "metadata": {
-            "name": "v2.0.2"
+            "name": "base-v2.0.2"
         },
         "spec": {
             "version": "v2.0.2",
@@ -14,7 +14,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.16"
+            "name": "base-v2.0.2-4.2.16"
         },
         "spec": {
             "version": "v2.0.2-4.2.16",
@@ -27,7 +27,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.51"
+            "name": "base-v2.0.2-4.2.51"
         },
         "spec": {
             "version": "v2.0.2-4.2.51",
@@ -40,7 +40,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.60"
+            "name": "base-v2.0.2-4.2.60"
         },
         "spec": {
             "version": "v2.0.2-4.2.60",
@@ -53,7 +53,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.65"
+            "name": "base-v2.0.2-4.2.65"
         },
         "spec": {
             "version": "v2.0.2-4.2.65",
@@ -66,7 +66,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-5.5.1"
+            "name": "base-v2.0.2-5.5.1"
         },
         "spec": {
             "version": "v2.0.2-5.5.1",
@@ -79,7 +79,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-5.5.12"
+            "name": "base-v2.0.2-5.5.12"
         },
         "spec": {
             "version": "v2.0.2-5.5.12",
@@ -92,7 +92,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-5.5.2"
+            "name": "base-v2.0.2-5.5.2"
         },
         "spec": {
             "version": "v2.0.2-5.5.2",
@@ -105,7 +105,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-5.5.6"
+            "name": "base-v2.0.2-5.5.6"
         },
         "spec": {
             "version": "v2.0.2-5.5.6",
@@ -118,7 +118,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-5.5.9"
+            "name": "base-v2.0.2-5.5.9"
         },
         "spec": {
             "version": "v2.0.2-5.5.9",
@@ -131,7 +131,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4"
+            "name": "base-v2.0.4"
         },
         "spec": {
             "version": "v2.0.4",
@@ -144,7 +144,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4-5.8.1"
+            "name": "base-v2.0.4-5.8.1"
         },
         "spec": {
             "version": "v2.0.4-5.8.1",
@@ -157,7 +157,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2"
+            "name": "base-v2.0.2"
         },
         "spec": {
             "version": "v2.0.2",
@@ -170,7 +170,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.156"
+            "name": "base-v2.0.2-4.2.156"
         },
         "spec": {
             "version": "v2.0.2-4.2.156",
@@ -183,7 +183,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.203"
+            "name": "base-v2.0.2-4.2.203"
         },
         "spec": {
             "version": "v2.0.2-4.2.203",
@@ -196,7 +196,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.42"
+            "name": "base-v2.0.2-4.2.42"
         },
         "spec": {
             "version": "v2.0.2-4.2.42",
@@ -209,7 +209,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4"
+            "name": "base-v2.0.4"
         },
         "spec": {
             "version": "v2.0.4",
@@ -222,7 +222,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4-5.5.3"
+            "name": "base-v2.0.4-5.5.3"
         },
         "spec": {
             "version": "v2.0.4-5.5.3",
@@ -235,7 +235,7 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4-5.5.6"
+            "name": "base-v2.0.4-5.5.6"
         },
         "spec": {
             "version": "v2.0.4-5.5.6",

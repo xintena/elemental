@@ -7,6 +7,7 @@ watches=$(yq e -o=j -I=0 '.watches[]' config.yaml)
 # Loop through all watches
 while IFS=\= read watch; do
     # Parse one entry
+    flavor=$(echo "$watch" | yq e '.flavor')
     fileName=$(echo "$watch" | yq e '.fileName')
     displayName=$(echo "$watch" | yq e '.displayName')
     osRepo=$(echo "$watch" | yq e '.osRepo')
@@ -20,10 +21,15 @@ while IFS=\= read watch; do
     echo "Creating $fileName"
     echo "[" > $file
     for tag in "${osTags[@]}"; do
+        if [ -z $flavor ]; then
+            name="${tag}"
+        else
+            name="${flavor}-v${tag}"
+        fi
         cat << EOF >> $file
     {
         "metadata": {
-            "name": "v$tag"
+            "name": "$name"
         },
         "spec": {
             "version": "v$tag",
@@ -41,10 +47,15 @@ EOF
     if [ $isoRepo != "N/A" ]; then
         isoTags=($(skopeo list-tags docker://$isoRepo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
         for tag in "${isoTags[@]}"; do
+            if [ -z $flavor ]; then
+                name="${tag}"
+            else
+                name="${flavor}-v${tag}"
+            fi
             cat << EOF >> $file
     {
         "metadata": {
-            "name": "v$tag"
+            "name": "$name"
         },
         "spec": {
             "version": "v$tag",
