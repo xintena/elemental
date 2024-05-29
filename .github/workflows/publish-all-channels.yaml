@@ -38,6 +38,6 @@ jobs:
         with:
           context: .
           push: true
-          build-args:
-            - CHANNEL_JSON_FILE=${{ matrix.channel.file }}
+          build-args: |
+            CHANNEL_JSON_FILE=${{ matrix.channel.file }}
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ matrix.channel.tag }}
