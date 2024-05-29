@@ -1,0 +1,80 @@
+[
+    {
+        "metadata": {
+            "name": "v2.0.2"
+        },
+        "spec": {
+            "version": "v2.0.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-2.2.115"
+        },
+        "spec": {
+            "version": "v2.0.2-2.2.115",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-2.2.115",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-2.2.20"
+        },
+        "spec": {
+            "version": "v2.0.2-2.2.20",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-2.2.20",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.2-2.2.85"
+        },
+        "spec": {
+            "version": "v2.0.2-2.2.85",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.2-2.2.85",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4"
+        },
+        "spec": {
+            "version": "v2.0.4",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.4",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-3.5.2"
+        },
+        "spec": {
+            "version": "v2.0.4-3.5.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": ":2.0.4-3.5.2",
+                "displayName": "SLE Micro RT 5.5 OS"
+            }
+        }
+    }
+]
