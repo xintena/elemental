@@ -38,7 +38,7 @@ for tag in "${isoTags[@]}"; do
             "version": "v$tag",
             "type": "iso",
             "metadata": {
-                "uri": "$osImage:$tag",
+                "uri": "$isoImage:$tag",
                 "displayName": "Elemental ISO"
             }
         }
