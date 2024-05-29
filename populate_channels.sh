@@ -22,7 +22,7 @@ while IFS=\= read watch; do
     echo "[" > $file
     for tag in "${osTags[@]}"; do
         if [ -z $flavor ]; then
-            name="${tag}"
+            name="v${tag}"
         else
             name="${flavor}-v${tag}"
         fi
@@ -48,7 +48,7 @@ EOF
         isoTags=($(skopeo list-tags docker://$isoRepo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
         for tag in "${isoTags[@]}"; do
             if [ -z $flavor ]; then
-                name="${tag}"
+                name="v${tag}"
             else
                 name="${flavor}-v${tag}"
             fi
