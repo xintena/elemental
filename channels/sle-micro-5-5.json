@@ -7,7 +7,7 @@
             "version": "v2.0.2",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.111",
                 "displayName": "SLE Micro 5.5 OS"
             }
         }
@@ -228,7 +228,20 @@
             "version": "v2.0.4",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.15",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.15"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.15",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.15",
                 "displayName": "SLE Micro 5.5 OS"
             }
         }
@@ -254,7 +267,7 @@
             "version": "v2.0.2",
             "type": "iso",
             "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.2",
+                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.2-4.2.128",
                 "displayName": "SLE Micro 5.5 ISO"
             }
         }
@@ -306,7 +319,20 @@
             "version": "v2.0.4",
             "type": "iso",
             "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4",
+                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4-5.5.20",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.20"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.20",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4-5.5.20",
                 "displayName": "SLE Micro 5.5 ISO"
             }
         }

@@ -17,6 +17,6 @@ watches:
   - flavor: "rt"
     fileName: "sle-micro-rt-5-5"
     displayName: "SLE Micro RT 5.5"
-    osRepo: registry.suse.com/suse/sle-micro/kvm-5.5
+    osRepo: registry.suse.com/suse/sle-micro/rt-5.5
     isoRepo: "N/A"
 

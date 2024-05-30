@@ -21,11 +21,18 @@ while IFS=\= read watch; do
     echo "Creating $fileName"
     echo "[" > $file
     for tag in "${osTags[@]}"; do
+        # Determine ManagedOSVersion name
         if [ -z $flavor ]; then
             name="v${tag}"
         else
             name="${flavor}-v${tag}"
         fi
+        # Fetch image tag
+        #
+        # Note that we use the 'org.opencontainers.image.version'
+        # so that we can always point to the latest build version tag.
+        # Ex. '2.0.2-4.2.102' instead of '2.0.2'
+        imageTag=($(skopeo inspect docker://$osRepo:$tag | jq '.Labels["org.opencontainers.image.version"]' | sed 's/"//g'))
         cat << EOF >> $file
     {
         "metadata": {
@@ -35,7 +42,7 @@ while IFS=\= read watch; do
             "version": "v$tag",
             "type": "container",
             "metadata": {
-                "upgradeImage": "$osRepo:$tag",
+                "upgradeImage": "$osRepo:$imageTag",
                 "displayName": "$displayName OS"
             }
         }
@@ -47,11 +54,18 @@ EOF
     if [ $isoRepo != "N/A" ]; then
         isoTags=($(skopeo list-tags docker://$isoRepo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
         for tag in "${isoTags[@]}"; do
+            # Determine ManagedOSVersion name
             if [ -z $flavor ]; then
                 name="v${tag}"
             else
                 name="${flavor}-v${tag}"
             fi
+            # Fetch image tag
+            #
+            # Note that we use the 'org.opencontainers.image.version'
+            # so that we can always point to the latest build version tag.
+            # Ex. '2.0.2-4.2.102' instead of '2.0.2'
+            imageTag=($(skopeo inspect docker://$isoRepo:$tag | jq '.Labels["org.opencontainers.image.version"]' | sed 's/"//g'))
             cat << EOF >> $file
     {
         "metadata": {
@@ -61,7 +75,7 @@ EOF
             "version": "v$tag",
             "type": "iso",
             "metadata": {
-                "uri": "$isoRepo:$tag",
+                "uri": "$isoRepo:$imageTag",
                 "displayName": "$displayName ISO"
             }
         }
