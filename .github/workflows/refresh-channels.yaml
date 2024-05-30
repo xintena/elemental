@@ -15,7 +15,7 @@ jobs:
         with:
           ref: 'main'
           fetch-depth: 0
-      - name: Run populate script
+      - name: Run refresh script
         run: ./refresh_channels.sh
       - name: Commit and push changes
         run: |
