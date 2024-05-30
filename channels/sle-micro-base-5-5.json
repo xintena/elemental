@@ -53,6 +53,84 @@
     },
     {
         "metadata": {
+            "name": "base-v2.0.2-4.2.65"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.65",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-4.2.65",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "base-v2.0.2-5.5.1"
+        },
+        "spec": {
+            "version": "v2.0.2-5.5.1",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.1",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "base-v2.0.2-5.5.12"
+        },
+        "spec": {
+            "version": "v2.0.2-5.5.12",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.12",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "base-v2.0.2-5.5.2"
+        },
+        "spec": {
+            "version": "v2.0.2-5.5.2",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.2",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "base-v2.0.2-5.5.6"
+        },
+        "spec": {
+            "version": "v2.0.2-5.5.6",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.6",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "base-v2.0.2-5.5.9"
+        },
+        "spec": {
+            "version": "v2.0.2-5.5.9",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.9",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
             "name": "base-v2.0.4"
         },
         "spec": {

@@ -4,23 +4,19 @@ watches:
     displayName: "SLE Micro 5.5"
     osRepo: registry.suse.com/suse/sle-micro/5.5
     isoRepo: registry.suse.com/suse/sle-micro-iso/5.5
-    limit: 3
   - flavor: "base"
     fileName: "sle-micro-base-5-5"
     displayName: "SLE Micro Base 5.5"
     osRepo: registry.suse.com/suse/sle-micro/base-5.5
     isoRepo: registry.suse.com/suse/sle-micro-iso/base-5.5
-    limit: 3
   - flavor: "kvm"
     fileName: "sle-micro-kvm-5-5"
     displayName: "SLE Micro KVM 5.5"
     osRepo: registry.suse.com/suse/sle-micro/kvm-5.5
     isoRepo: "N/A"
-    limit: -2
   - flavor: "rt"
     fileName: "sle-micro-rt-5-5"
     displayName: "SLE Micro RT 5.5"
     osRepo: registry.suse.com/suse/sle-micro/rt-5.5
     isoRepo: "N/A"
-    limit: -2
 
