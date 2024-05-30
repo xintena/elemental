@@ -2,7 +2,7 @@ name: Refresh Channels
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   refresh-channels:
@@ -22,5 +22,5 @@ jobs:
           git config --global user.email "do-not-use@elemental.suse.com"
           git config --global user.name "GitHub Action Runner"
           git add .
-          git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
+          git diff-index --quiet HEAD || git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
           git push origin

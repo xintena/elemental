@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'channels/**.json'
+      - 'Dockerfile'
 
 env:
   REGISTRY: ghcr.io
