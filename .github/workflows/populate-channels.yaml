@@ -1,0 +1,27 @@
+name: Populate Channels
+on:
+  schedule:
+    - cron: '*/1 * * * *'
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  publish-channel:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: 'main'
+          fetch-depth: 0
+      - name: Run populate script
+        run: ./populate_channels.sh
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
+          git push origin
