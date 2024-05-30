@@ -12,6 +12,7 @@ while IFS=\= read watch; do
     displayName=$(echo "$watch" | yq e '.displayName')
     osRepo=$(echo "$watch" | yq e '.osRepo')
     isoRepo=$(echo "$watch" | yq e '.isoRepo')
+    limit=$(echo "$watch" | yq e '.limit')
 
     # Fetch the OS Image tags
     osTags=($(skopeo list-tags docker://$osRepo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
@@ -27,6 +28,13 @@ while IFS=\= read watch; do
         else
             name="${flavor}-v${tag}"
         fi
+        # Reset counter on non-build tags (ex. v1.2.3)
+        if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
+            counter=$((limit+1))
+        elif [[ "$counter" -eq 0 ]]; then
+            continue
+        fi
+        ((counter--))
         # Fetch image tag
         #
         # Note that we use the 'org.opencontainers.image.version'
@@ -60,6 +68,13 @@ EOF
             else
                 name="${flavor}-v${tag}"
             fi
+            # Reset counter on non-build tags (ex. v1.2.3)
+            if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
+                counter=$((limit+1))
+            elif [[ "$counter" -eq 0 ]]; then
+                continue
+            fi
+            ((counter--))
             # Fetch image tag
             #
             # Note that we use the 'org.opencontainers.image.version'
