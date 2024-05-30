@@ -21,6 +21,7 @@ jobs:
             flavor: "sle-micro"
           - tag:  "5.5-kvm"
             file: "sle-micro-kvm-5-5.json"
+            flavor: "sle-micro"
           - tag: "5.5-rt"
             file: "sle-micro-rt-5-5.json"
             flavor: "sle-micro"
