@@ -1,15 +1,11 @@
-name: Populate Channels
+name: Refresh Channels
 on:
   workflow_dispatch:
   schedule:
     - cron: '*/1 * * * *'
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-
 jobs:
-  publish-channel:
+  refresh-channels:
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -20,9 +16,11 @@ jobs:
           ref: 'main'
           fetch-depth: 0
       - name: Run populate script
-        run: ./populate_channels.sh
+        run: ./refresh_channels.sh
       - name: Commit and push changes
         run: |
+          git config --global user.email "do-not-use@elemental.suse.com"
+          git config --global user.name "GitHub Action Runner"
           git add .
           git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
           git push origin

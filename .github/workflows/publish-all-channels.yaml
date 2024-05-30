@@ -15,16 +15,16 @@ jobs:
         channel:
           - tag: "5.5"
             file: "sle-micro-5-5.json"
-            flavor: "sle-micro"
+            baseOS: "sle-micro"
           - tag:  "5.5-base"
             file: "sle-micro-base-5-5.json"
-            flavor: "sle-micro"
+            baseOS: "sle-micro"
           - tag:  "5.5-kvm"
             file: "sle-micro-kvm-5-5.json"
-            flavor: "sle-micro"
+            baseOS: "sle-micro"
           - tag: "5.5-rt"
             file: "sle-micro-rt-5-5.json"
-            flavor: "sle-micro"
+            baseOS: "sle-micro"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -44,4 +44,4 @@ jobs:
           push: true
           build-args: |
             CHANNEL_JSON_FILE=${{ matrix.channel.file }}
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/${{ matrix.channel.flavor }}:${{ matrix.channel.tag }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/${{ matrix.channel.baseOS }}:${{ matrix.channel.tag }}
