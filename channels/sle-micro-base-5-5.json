@@ -137,7 +137,7 @@
             "version": "v2.0.4",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4-5.8.7",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4-5.8.9",
                 "displayName": "SLE Micro Base 5.5 OS"
             }
         }
