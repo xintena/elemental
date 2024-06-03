@@ -1,5 +1,10 @@
 name: Publish All Channels
 on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Refresh Channels]
+    types:
+      - completed
   push:
     branches:
       - main
