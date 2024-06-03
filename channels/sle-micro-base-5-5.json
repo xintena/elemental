@@ -1,19 +1,6 @@
 [
     {
         "metadata": {
-            "name": "base-v2.0.2"
-        },
-        "spec": {
-            "version": "v2.0.2",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.2-5.5.12",
-                "displayName": "SLE Micro Base 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "base-v2.0.2-4.2.16"
         },
         "spec": {
@@ -131,19 +118,6 @@
     },
     {
         "metadata": {
-            "name": "base-v2.0.4"
-        },
-        "spec": {
-            "version": "v2.0.4",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4-5.8.9",
-                "displayName": "SLE Micro Base 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "base-v2.0.4-5.8.1"
         },
         "spec": {
@@ -183,19 +157,6 @@
     },
     {
         "metadata": {
-            "name": "base-v2.0.2"
-        },
-        "spec": {
-            "version": "v2.0.2",
-            "type": "iso",
-            "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2-4.2.203",
-                "displayName": "SLE Micro Base 5.5 ISO"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "base-v2.0.2-4.2.156"
         },
         "spec": {
@@ -229,19 +190,6 @@
             "type": "iso",
             "metadata": {
                 "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.2-4.2.42",
-                "displayName": "SLE Micro Base 5.5 ISO"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "base-v2.0.4"
-        },
-        "spec": {
-            "version": "v2.0.4",
-            "type": "iso",
-            "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/base-5.5:2.0.4-5.5.29",
                 "displayName": "SLE Micro Base 5.5 ISO"
             }
         }

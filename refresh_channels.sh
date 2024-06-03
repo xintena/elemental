@@ -61,18 +61,6 @@ function append_iso_entry() {
 EOF
 }
 
-# Return the 'org.opencontainers.image.version' label value
-#
-# This value should always point to the latest build version tag.
-# Ex. '2.0.2-4.2.102' instead of '2.0.2'
-function fetch_build_tag() {
-    local repo=$1
-    local tag=$2
-
-    local build_tag=($(skopeo inspect docker://$repo:$tag | jq '.Labels["org.opencontainers.image.version"]' | sed 's/"//g'))
-    echo "$build_tag"
-}
-
 watches=$(yq e -o=j -I=0 '.watches[]' config.yaml)
 
 # Loop through all watches
@@ -92,18 +80,24 @@ while IFS=\= read watch; do
     # Process OS container tags
     os_tags=($(skopeo list-tags docker://$os_repo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
     for tag in "${os_tags[@]}"; do
+        # Omit version (non-build) tags
+        if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
+            continue
+        fi
         managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag")
-        build_tag=$(fetch_build_tag "$os_repo" "$tag")
-        append_os_entry "$file" "$managed_os_version_name" "$tag" "$os_repo:$build_tag" "$display_name OS"
+        append_os_entry "$file" "$managed_os_version_name" "$tag" "$os_repo:$tag" "$display_name OS"
     done
 
     # Process ISO container tags (if applicable)
     if [ "$iso_repo" != "N/A" ]; then
         iso_tags=($(skopeo list-tags docker://$iso_repo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
         for tag in "${iso_tags[@]}"; do
+            # Omit version (non-build) tags
+            if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
+                continue
+            fi
             managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag")
-            build_tag=$(fetch_build_tag "$iso_repo" "$tag")
-            append_iso_entry "$file" "$managed_os_version_name" "$tag" "$iso_repo:$build_tag" "$display_name ISO"
+            append_iso_entry "$file" "$managed_os_version_name" "$tag" "$iso_repo:$tag" "$display_name ISO"
         done
     fi
 

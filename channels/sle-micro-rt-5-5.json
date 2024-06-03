@@ -1,26 +1,13 @@
 [
     {
         "metadata": {
-            "name": "rt-v2.0.2"
-        },
-        "spec": {
-            "version": "v2.0.2",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:",
-                "displayName": "SLE Micro RT 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "rt-v2.0.2-3.2.119"
         },
         "spec": {
             "version": "v2.0.2-3.2.119",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:2.0.2-3.2.119",
                 "displayName": "SLE Micro RT 5.5 OS"
             }
         }
@@ -33,7 +20,7 @@
             "version": "v2.0.2-3.2.23",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:2.0.2-3.2.23",
                 "displayName": "SLE Micro RT 5.5 OS"
             }
         }
@@ -46,20 +33,7 @@
             "version": "v2.0.2-3.2.86",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:",
-                "displayName": "SLE Micro RT 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "rt-v2.0.4"
-        },
-        "spec": {
-            "version": "v2.0.4",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:2.0.4-4.5.21",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/rt-5.5:2.0.2-3.2.86",
                 "displayName": "SLE Micro RT 5.5 OS"
             }
         }
