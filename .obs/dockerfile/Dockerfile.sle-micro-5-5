@@ -11,7 +11,7 @@ ARG CHANNEL_JSON_FILE="sle-micro-5-5.json"
 COPY $CHANNEL_JSON_FILE /channel.json
 
 FROM scratch
-COPY --from=builder /busybox /
+COPY --from=builder /usr/bin/cp /usr/bin/cp
 COPY --from=builder /channel.json /channel.json
 
 USER 10010:10010
