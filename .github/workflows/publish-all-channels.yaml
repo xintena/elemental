@@ -24,14 +24,11 @@ jobs:
           - tag: "5.5"
             file: "sle-micro-5-5.json"
             baseOS: "sle-micro"
-          - tag:  "5.5-base"
-            file: "sle-micro-base-5-5.json"
-            baseOS: "sle-micro"
           - tag:  "5.5-kvm"
-            file: "sle-micro-kvm-5-5.json"
+            file: "sle-micro-5-5-kvm.json"
             baseOS: "sle-micro"
           - tag: "5.5-rt"
-            file: "sle-micro-rt-5-5.json"
+            file: "sle-micro-5-5-rt.json"
             baseOS: "sle-micro"
     runs-on: ubuntu-latest
     steps:
