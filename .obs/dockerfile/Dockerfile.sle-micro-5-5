@@ -2,11 +2,17 @@
 #!BuildTag: rancher/elemental-channel/sle-micro:5.5
 #!UseOBSRepositories
 
-FROM bci/bci-busybox
+ARG SLMICRO_VERSION
+
+FROM suse/sl-micro/${SLMICRO_VERSION}/toolbox:latest as base
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5.json"
 
 COPY channels/$CHANNEL_JSON_FILE /channel.json
+
+FROM scratch
+COPY --from=base /busybox /
+COPY --from=base /channel.json /channel.json
 
 USER 10010:10010
 
