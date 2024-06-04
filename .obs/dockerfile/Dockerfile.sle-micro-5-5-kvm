@@ -16,9 +16,6 @@ COPY --from=builder /channel.json /channel.json
 
 USER 10010:10010
 
-ARG BUILD_REPO=%%IMG_REPO%%
-ARG IMAGE_REPO=$BUILD_REPO/rancher/elemental-channel/sle-micro:5.5-kvm
-
 # Define labels according to https://en.opensuse.org/Building_derived_containers
 # labelprefix=com.rancher.elemental
 LABEL org.opencontainers.image.title="Rancher SLE Micro 5.5 KVM Channel"
@@ -27,7 +24,7 @@ LABEL org.opencontainers.image.version="5.5-kvm"
 LABEL org.opencontainers.image.url="https://build.opensuse.org"
 LABEL org.opencontainers.image.created="%BUILDTIME%"
 LABEL org.opencontainers.image.vendor="SUSE LLC"
-LABEL org.opensuse.reference=$IMAGE_REPO
+LABEL org.opensuse.reference="registry.opensuse.org/rancher/elemental-channel/sle-micro:5.5-kvm"
 LABEL org.openbuildservice.disturl="%DISTURL%"
 # endlabelprefix
 
