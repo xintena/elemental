@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: Apache-2.0
+#!BuildTag: rancher/elemental-channel/sle-micro:5.5-kvm
+#!UseOBSRepositories
+
+FROM registry.suse.com/bci/bci-busybox
+
+ARG CHANNEL_JSON_FILE="sle-micro-5-5-kvm.json"
+
+COPY ../../channels/$CHANNEL_JSON_FILE /channel.json
+
+USER 10010:10010
+
+# Define labels according to https://en.opensuse.org/Building_derived_containers
+# labelprefix=com.rancher.elemental
+LABEL org.opencontainers.image.title="Rancher SLE Micro 5.5 KVM Channel"
+LABEL org.opencontainers.image.description="Includes the Elemental Channel"
+LABEL org.opencontainers.image.version="5.5-kvm"
+LABEL org.opencontainers.image.url="https://build.opensuse.org"
+LABEL org.opencontainers.image.created="%BUILDTIME%"
+LABEL org.opencontainers.image.vendor="SUSE LLC"
+LABEL org.opensuse.reference="rancher/elemental-channel/sle-micro:5.5-kvm"
+LABEL org.openbuildservice.disturl="%DISTURL%"
+# endlabelprefix
+
+ENTRYPOINT ["cp"]
+CMD ["/channel.json", "/data/output"]
