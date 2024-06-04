@@ -4,15 +4,15 @@
 
 ARG SLMICRO_VERSION
 
-FROM suse/sl-micro/${SLMICRO_VERSION}/toolbox:latest as base
+FROM suse/sl-micro/${SLMICRO_VERSION}/toolbox:latest as builder
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5.json"
 
-COPY channels/$CHANNEL_JSON_FILE /channel.json
+COPY ../../channels/$CHANNEL_JSON_FILE /channel.json
 
 FROM scratch
-COPY --from=base /busybox /
-COPY --from=base /channel.json /channel.json
+COPY --from=builder /busybox /
+COPY --from=builder /channel.json /channel.json
 
 USER 10010:10010
 

@@ -8,7 +8,7 @@ FROM suse/sl-micro/${SLMICRO_VERSION}/toolbox:latest as builder
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5-kvm.json"
 
-COPY channels/$CHANNEL_JSON_FILE /channel.json
+COPY ../../channels/$CHANNEL_JSON_FILE /channel.json
 
 FROM scratch
 COPY --from=builder /busybox /
