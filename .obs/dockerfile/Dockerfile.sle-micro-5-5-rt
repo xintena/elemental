@@ -2,7 +2,7 @@
 #!BuildTag: rancher/elemental-channel/sle-micro:5.5-rt
 #!UseOBSRepositories
 
-FROM registry.suse.com/bci/bci-busybox:latest
+FROM bci/bci-busybox
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5-rt.json"
 
