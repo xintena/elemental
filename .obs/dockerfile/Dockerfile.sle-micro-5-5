@@ -24,7 +24,7 @@ LABEL org.opencontainers.image.version="5.5"
 LABEL org.opencontainers.image.url="https://build.opensuse.org"
 LABEL org.opencontainers.image.created="%BUILDTIME%"
 LABEL org.opencontainers.image.vendor="SUSE LLC"
-LABEL org.opensuse.reference="registry.opensuse.org/rancher/elemental-channel/sle-micro:5.5"
+LABEL org.opensuse.reference="rancher/elemental-channel/sle-micro:5.5"
 LABEL org.openbuildservice.disturl="%DISTURL%"
 # endlabelprefix
 
