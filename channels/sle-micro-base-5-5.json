@@ -131,6 +131,19 @@
     },
     {
         "metadata": {
+            "name": "base-v2.0.4-5.8.15"
+        },
+        "spec": {
+            "version": "v2.0.4-5.8.15",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/base-5.5:2.0.4-5.8.15",
+                "displayName": "SLE Micro Base 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
             "name": "base-v2.0.4-5.8.7"
         },
         "spec": {
