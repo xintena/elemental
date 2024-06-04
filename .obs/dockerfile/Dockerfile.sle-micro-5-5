@@ -6,7 +6,7 @@ FROM registry.suse.com/bci/bci-busybox
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5.json"
 
-COPY ../../channels/$CHANNEL_JSON_FILE /channel.json
+COPY channels/$CHANNEL_JSON_FILE /channel.json
 
 USER 10010:10010
 
