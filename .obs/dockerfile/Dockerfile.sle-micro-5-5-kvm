@@ -2,11 +2,11 @@
 #!BuildTag: rancher/elemental-channel/sle-micro:5.5-kvm
 #!UseOBSRepositories
 
-FROM registry.suse.com/bci/bci-busybox
+FROM registry.suse.com/bci/bci-busybox:latest
 
 ARG CHANNEL_JSON_FILE="sle-micro-5-5-kvm.json"
 
-COPY $CHANNEL_JSON_FILE /channel.json
+COPY channels/$CHANNEL_JSON_FILE /channel.json
 
 USER 10010:10010
 
