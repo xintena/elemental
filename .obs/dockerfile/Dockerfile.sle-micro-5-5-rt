@@ -33,5 +33,5 @@ LABEL org.opensuse.reference="rancher/elemental-channel/sle-micro:5.5-rt"
 LABEL org.openbuildservice.disturl="%DISTURL%"
 # endlabelprefix
 
-ENTRYPOINT ["cp"]
+ENTRYPOINT ["/usr/bin/busybox", "cp"]
 CMD ["/channel.json", "/data/output"]
