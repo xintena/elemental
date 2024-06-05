@@ -6,10 +6,11 @@ set -e
 function format_managed_os_version_name() {
     local flavor=$1
     local tag=$2
+    local type=$3
     if [ -z "$flavor" ]; then
-        echo "v${tag}"
+        echo "v${tag}-${type}"
     else
-        echo "${flavor}-v${tag}"
+        echo "${flavor}-v${tag}-${type}"
     fi
 }
 
@@ -84,7 +85,7 @@ while IFS=\= read watch; do
         if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
             continue
         fi
-        managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag")
+        managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag" "os")
         append_os_entry "$file" "$managed_os_version_name" "$tag" "$os_repo:$tag" "$display_name OS"
     done
 
@@ -96,7 +97,7 @@ while IFS=\= read watch; do
             if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
                 continue
             fi
-            managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag")
+            managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag" "iso")
             append_iso_entry "$file" "$managed_os_version_name" "$tag" "$iso_repo:$tag" "$display_name ISO"
         done
     fi

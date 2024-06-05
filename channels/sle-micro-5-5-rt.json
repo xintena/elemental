@@ -1,7 +1,7 @@
 [
     {
         "metadata": {
-            "name": "rt-v2.0.2-3.2.119"
+            "name": "rt-v2.0.2-3.2.119-os"
         },
         "spec": {
             "version": "v2.0.2-3.2.119",
@@ -14,7 +14,7 @@
     },
     {
         "metadata": {
-            "name": "rt-v2.0.2-3.2.23"
+            "name": "rt-v2.0.2-3.2.23-os"
         },
         "spec": {
             "version": "v2.0.2-3.2.23",
@@ -27,7 +27,7 @@
     },
     {
         "metadata": {
-            "name": "rt-v2.0.2-3.2.86"
+            "name": "rt-v2.0.2-3.2.86-os"
         },
         "spec": {
             "version": "v2.0.2-3.2.86",
@@ -40,7 +40,7 @@
     },
     {
         "metadata": {
-            "name": "rt-v2.0.4-4.5.21"
+            "name": "rt-v2.0.4-4.5.21-os"
         },
         "spec": {
             "version": "v2.0.4-4.5.21",
@@ -53,7 +53,7 @@
     },
     {
         "metadata": {
-            "name": "rt-v2.0.4-4.5.3"
+            "name": "rt-v2.0.4-4.5.3-os"
         },
         "spec": {
             "version": "v2.0.4-4.5.3",
