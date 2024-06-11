@@ -31,7 +31,7 @@ function append_os_entry() {
             "type": "container",
             "metadata": {
                 "upgradeImage": "$image_uri",
-                "displayName": "$display_name"
+                "displayName": "$display_name OS"
             }
         }
     },
@@ -55,13 +55,85 @@ function append_iso_entry() {
             "type": "iso",
             "metadata": {
                 "uri": "$image_uri",
-                "displayName": "$display_name"
+                "displayName": "$display_name ISO"
             }
         }
     },
 EOF
 }
 
+# Processes the intermediate image list sorting by creation date
+function process_intermediate_list() {
+    local version=$1
+    local file=$2
+    local type=$3
+    local limit=$4
+    shift 4
+
+    local IFS=$'\n'
+    local sorted_list=($(echo "$@" | jq -nc '[inputs]' | jq '. |= sort_by(.created) | reverse' | jq -c '.[]'))
+
+    echo "Limiting $limit entries for version $version:"
+
+    for ((i = 0; i < ${#sorted_list[@]} && i < $limit; i++)); do
+        local entry="${sorted_list[$i]}"
+        
+        echo -e "- $(( i + 1 )): $entry"
+
+        local image_uri=$(echo "$entry" | jq '.uri' | sed 's/"//g')
+        local version=$(echo "$entry" | jq '.version' | sed 's/"//g')
+        local managed_os_version_name=$(echo "$entry" | jq '.managedOSVersionName' | sed 's/"//g')
+        local display_name=$(echo "$entry" | jq '.displayName' | sed 's/"//g')
+
+        if [[ "$type" == "os" ]]; then
+            append_os_entry "$file" "$managed_os_version_name" "$version" "$image_uri" "$display_name"
+        elif [[ "$type" == "iso" ]]; then
+            append_iso_entry "$file" "$managed_os_version_name" "$version" "$image_uri" "$display_name"
+        fi
+    done
+}
+
+# Processes an entire repository and creates a list of all images
+function process_repo() {
+    local repo=$1
+    local repo_type=$2
+    local file=$3
+    local limit=$4
+    local flavor=$5
+    local display_name=$6
+
+    local intermediate_list=()
+    local tags=($(skopeo list-tags docker://$repo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
+    
+    echo "Processing repository: $repo"
+
+    for tag in "${tags[@]}"; do
+        # Version (non-build) tag (ex '1.2.3')
+        if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
+            # If the intermediate_list is not empty, 
+            # it means we are done processing the previously met version tag.
+            if [[ -n $intermediate_list ]]; then
+                process_intermediate_list "$processing_version" "$file" "$repo_type" $limit "${intermediate_list[@]}"
+                local intermediate_list=()
+            fi
+            local processing_version="$tag"
+            continue
+        fi
+        local image_uri="$repo:$tag"
+        local image_creation_date=($(skopeo inspect docker://$image_uri | jq '.Created' | sed 's/"//g'))
+        local managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag" "$repo_type")
+        # Append entry to intermediate list
+        local intermediate_entry="{\"uri\":\"$image_uri\",\"created\":\"$image_creation_date\",\"version\":\"$tag\",\"managedOSVersionName\":\"$managed_os_version_name\",\"displayName\":\"$display_name\"}"
+        echo "Intermediate: $intermediate_entry"
+        local intermediate_list=("${intermediate_list[@]}" "$intermediate_entry")
+    done
+    # Process the intermediate_list again for the last remaining version
+    if [[ -n $intermediate_list ]]; then
+        process_intermediate_list "$processing_version" "$file" "$repo_type" $limit "${intermediate_list[@]}"
+    fi
+}
+
+# The list of repositories to watch
 watches=$(yq e -o=j -I=0 '.watches[]' config.yaml)
 
 # Loop through all watches
@@ -72,6 +144,7 @@ while IFS=\= read watch; do
     display_name=$(echo "$watch" | yq e '.displayName')
     os_repo=$(echo "$watch" | yq e '.osRepo')
     iso_repo=$(echo "$watch" | yq e '.isoRepo')
+    limit=$(echo "$watch" | yq e '.limit')
 
     # Start writing the channel file by opening a JSON array
     file="channels/$file_name.json"
@@ -79,27 +152,11 @@ while IFS=\= read watch; do
     echo "[" > $file
 
     # Process OS container tags
-    os_tags=($(skopeo list-tags docker://$os_repo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
-    for tag in "${os_tags[@]}"; do
-        # Omit version (non-build) tags
-        if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
-            continue
-        fi
-        managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag" "os")
-        append_os_entry "$file" "$managed_os_version_name" "$tag" "$os_repo:$tag" "$display_name OS"
-    done
+    process_repo "$os_repo" "os" "$file" "$limit" "$flavor" "$display_name"
 
     # Process ISO container tags (if applicable)
     if [ "$iso_repo" != "N/A" ]; then
-        iso_tags=($(skopeo list-tags docker://$iso_repo | jq '.Tags[]' | grep -v '.att\|.sig\|latest' | sed 's/"//g'))
-        for tag in "${iso_tags[@]}"; do
-            # Omit version (non-build) tags
-            if [[ $tag =~ ^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$ ]]; then
-                continue
-            fi
-            managed_os_version_name=$(format_managed_os_version_name "$flavor" "$tag" "iso")
-            append_iso_entry "$file" "$managed_os_version_name" "$tag" "$iso_repo:$tag" "$display_name ISO"
-        done
+        process_repo "$iso_repo" "iso" "$file" "$limit" "$flavor" "$display_name"
     fi
 
     # Delete trailing ',' from array. (technically last written char on the file)

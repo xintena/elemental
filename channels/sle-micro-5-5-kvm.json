@@ -14,19 +14,6 @@
     },
     {
         "metadata": {
-            "name": "kvm-v2.0.2-2.2.20-os"
-        },
-        "spec": {
-            "version": "v2.0.2-2.2.20",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/kvm-5.5:2.0.2-2.2.20",
-                "displayName": "SLE Micro KVM 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "kvm-v2.0.2-2.2.85-os"
         },
         "spec": {
@@ -34,6 +21,19 @@
             "type": "container",
             "metadata": {
                 "upgradeImage": "registry.suse.com/suse/sle-micro/kvm-5.5:2.0.2-2.2.85",
+                "displayName": "SLE Micro KVM 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "kvm-v2.0.2-2.2.20-os"
+        },
+        "spec": {
+            "version": "v2.0.2-2.2.20",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/kvm-5.5:2.0.2-2.2.20",
                 "displayName": "SLE Micro KVM 5.5 OS"
             }
         }

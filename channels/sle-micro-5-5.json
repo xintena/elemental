@@ -1,39 +1,13 @@
 [
     {
         "metadata": {
-            "name": "v2.0.2-4.2.102-os"
+            "name": "v2.0.2-4.2.111-os"
         },
         "spec": {
-            "version": "v2.0.2-4.2.102",
+            "version": "v2.0.2-4.2.111",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.102",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.105-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.105",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.105",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.107-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.107",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.107",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.111",
                 "displayName": "SLE Micro 5.5 OS"
             }
         }
@@ -53,221 +27,13 @@
     },
     {
         "metadata": {
-            "name": "v2.0.2-4.2.111-os"
+            "name": "v2.0.2-4.2.107-os"
         },
         "spec": {
-            "version": "v2.0.2-4.2.111",
+            "version": "v2.0.2-4.2.107",
             "type": "container",
             "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.111",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.20-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.20",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.20",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.70-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.70",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.70",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.85-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.85",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.85",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.87-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.87",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.87",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.89-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.89",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.89",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.91-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.91",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.91",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.93-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.93",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.93",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.94-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.94",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.94",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.96-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.96",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.96",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.97-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.97",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.97",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.99-os"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.99",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.99",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.4-5.5.15-os"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.15",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.15",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.4-5.5.18-os"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.18",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.18",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.4-5.5.2-os"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.2",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.2",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.4-5.5.24-os"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.24",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.24",
-                "displayName": "SLE Micro 5.5 OS"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.4-5.5.28-os"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.28",
-            "type": "container",
-            "metadata": {
-                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.28",
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.2-4.2.107",
                 "displayName": "SLE Micro 5.5 OS"
             }
         }
@@ -287,6 +53,32 @@
     },
     {
         "metadata": {
+            "name": "v2.0.4-5.5.28-os"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.28",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.28",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.24-os"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.24",
+            "type": "container",
+            "metadata": {
+                "upgradeImage": "registry.suse.com/suse/sle-micro/5.5:2.0.4-5.5.24",
+                "displayName": "SLE Micro 5.5 OS"
+            }
+        }
+    },
+    {
+        "metadata": {
             "name": "v2.0.2-4.2.128-iso"
         },
         "spec": {
@@ -294,19 +86,6 @@
             "type": "iso",
             "metadata": {
                 "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.2-4.2.128",
-                "displayName": "SLE Micro 5.5 ISO"
-            }
-        }
-    },
-    {
-        "metadata": {
-            "name": "v2.0.2-4.2.27-iso"
-        },
-        "spec": {
-            "version": "v2.0.2-4.2.27",
-            "type": "iso",
-            "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.2-4.2.27",
                 "displayName": "SLE Micro 5.5 ISO"
             }
         }
@@ -326,6 +105,19 @@
     },
     {
         "metadata": {
+            "name": "v2.0.2-4.2.27-iso"
+        },
+        "spec": {
+            "version": "v2.0.2-4.2.27",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.2-4.2.27",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
             "name": "v2.0.4-5.5.20-iso"
         },
         "spec": {
@@ -339,19 +131,6 @@
     },
     {
         "metadata": {
-            "name": "v2.0.4-5.5.3-iso"
-        },
-        "spec": {
-            "version": "v2.0.4-5.5.3",
-            "type": "iso",
-            "metadata": {
-                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4-5.5.3",
-                "displayName": "SLE Micro 5.5 ISO"
-            }
-        }
-    },
-    {
-        "metadata": {
             "name": "v2.0.4-5.5.6-iso"
         },
         "spec": {
@@ -359,6 +138,19 @@
             "type": "iso",
             "metadata": {
                 "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4-5.5.6",
+                "displayName": "SLE Micro 5.5 ISO"
+            }
+        }
+    },
+    {
+        "metadata": {
+            "name": "v2.0.4-5.5.3-iso"
+        },
+        "spec": {
+            "version": "v2.0.4-5.5.3",
+            "type": "iso",
+            "metadata": {
+                "uri": "registry.suse.com/suse/sle-micro-iso/5.5:2.0.4-5.5.3",
                 "displayName": "SLE Micro 5.5 ISO"
             }
         }
