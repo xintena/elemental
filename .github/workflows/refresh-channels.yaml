@@ -17,10 +17,19 @@ jobs:
           fetch-depth: 0
       - name: Run refresh script
         run: ./refresh_channels.sh
-      - name: Commit and push changes
+      - name: Open a new PR
         run: |
           git config --global user.email "do-not-use@elemental.suse.com"
           git config --global user.name "GitHub Action Runner"
+          branch_name="gha-refresh-${{ github.run_id }}-${{ github.run_number}}-${{ github.run_attempt }}"
+          git switch --force-create "${branch_name}" origin/main
           git add .
-          git diff-index --quiet HEAD || git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
-          git push origin
+          
+          if git diff-index --quiet HEAD; then
+            echo "No new updates. Nothing to do."
+            exit 0
+          fi
+          
+          git commit -m "Automatic update. Run ID ${{ github.run_id }}, Number ${{ github.run_number}}, Attempt ${{ github.run_attempt }}" 
+          git push --force origin "${branch_name}"
+          gh pr create --fill --head "${branch_name}"
