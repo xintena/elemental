@@ -27,7 +27,7 @@ ARG IMAGE_REPO=$BUILD_REPO/rancher/elemental-unstable-channel:latest
 # Define labels according to https://en.opensuse.org/Building_derived_containers
 # labelprefix=com.rancher.elemental
 LABEL org.opencontainers.image.title="Rancher Elemental Unstable Channel"
-LABEL org.opencontainers.image.description="Includes the Elemental Ustable Channel"
+LABEL org.opencontainers.image.description="Includes the Elemental Unstable Channel"
 LABEL org.opencontainers.image.version="unstable"
 LABEL org.opencontainers.image.url="https://build.opensuse.org"
 LABEL org.opencontainers.image.created="%BUILDTIME%"
